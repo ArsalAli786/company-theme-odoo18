@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="company_theme_enterprise_apps_background"
+              inherit_id="web.webclient_bootstrap"
+              name="Company Theme Enterprise Apps Background">
+        <xpath expr="//t[@t-set='head_web']" position="inside">
+            <t t-set="company_id" t-value="(request.cookies.get('cids') or '1').split('-')[0]"/>
+            <t t-set="company" t-value="request.env['res.company'].browse(int(company_id))"/>
+            <t t-set="apps_menu_background_size"
+               t-value="company.with_context(bin_size=True).apps_menu_background"/>
+            <t t-if="apps_menu_background_size">
+                <style>
+                    body.o_web_client.o_home_menu_background {
+                        --homeMenu-bg-image: url("/web/image/res.company/<t t-out="company.id"/>/apps_menu_background?unique=<t t-out="company.write_date.strftime('%Y%m%d%H%M%S')"/>");
+                    }
+                </style>
+            </t>
+        </xpath>
+    </template>
+</odoo>

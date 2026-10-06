@@ -1,0 +1,56 @@
+<div class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h1 class="oe_slogan" style="color: inherit;">Company Backend Theme Color</h1>
+            <h3 class="oe_slogan" style="color: inherit;">Choose a primary accent color for each company in Odoo 18.</h3>
+            <p>
+                Company Backend Theme Color applies the selected company color to standard
+                primary styling in the Odoo backend.
+            </p>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2>Features</h2>
+            <ul>
+                <li>Store a separate primary accent color on each company.</li>
+                <li>
+                    Apply the color to standard Odoo and Bootstrap primary styling, including
+                    primary buttons, links, navigation, tabs, focus rings, and selected states.
+                </li>
+                <li>Derive hover and active shades from the selected color.</li>
+                <li>Keep semantic success, warning, and danger colors unchanged.</li>
+                <li>
+                    Standard components that use Odoo or Bootstrap primary styling inherit the
+                    configured color without per-module changes.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2>Configuration</h2>
+            <ol>
+                <li>Open the company form.</li>
+                <li>Go to the <strong>Themes</strong> tab.</li>
+                <li>Set <strong>Company Theme Color</strong> and save.</li>
+                <li>Reload the backend to apply the color for the active company.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2>Compatibility and behavior</h2>
+            <ul>
+                <li>Compatible with Odoo 18. The color is read from the active company when the backend loads.</li>
+                <li>
+                    Components that define their own hardcoded colors, including third-party modules,
+                    are not forcibly recolored.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
