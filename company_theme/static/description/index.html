@@ -1,31 +1,76 @@
 <div class="oe_container">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <h1 class="oe_slogan" style="color: inherit;">Company Backend Theme Color</h1>
-            <h3 class="oe_slogan" style="color: inherit;">Choose a primary accent color for each company in Odoo 18.</h3>
+            <h1 class="oe_slogan" style="color: inherit;">Company Theme for Odoo 18</h1>
+            <h3 class="oe_slogan" style="color: inherit;">A company-specific primary accent for the Odoo backend.</h3>
             <p>
-                Company Backend Theme Color applies the selected company color to standard
-                primary styling in the Odoo backend.
+                Choose a primary accent color for each company and let standard Odoo
+                backend components follow it. The included Enterprise companion addon
+                also lets each company choose an Apps/Home screen background image.
             </p>
         </div>
     </div>
 
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <h2>Features</h2>
+            <h2>Key features</h2>
             <ul>
-                <li>Store a separate primary accent color on each company.</li>
+                <li>Configure a separate backend primary color for each company.</li>
                 <li>
-                    Apply the color to standard Odoo and Bootstrap primary styling, including
-                    primary buttons, links, navigation, tabs, focus rings, and selected states.
+                    Apply the configured accent to standard primary buttons, links,
+                    hover and active states, focus indication, selections, tabs,
+                    dropdowns, and other supported Odoo/Bootstrap primary styling.
                 </li>
-                <li>Derive hover and active shades from the selected color.</li>
-                <li>Keep semantic success, warning, and danger colors unchanged.</li>
+                <li>Derive interactive color shades from the selected company color.</li>
+                <li>Keep semantic success, warning, and danger colors distinct.</li>
                 <li>
-                    Standard components that use Odoo or Bootstrap primary styling inherit the
-                    configured color without per-module changes.
+                    Standard Odoo and custom modules using native Odoo/Bootstrap primary
+                    styles inherit the configured color without per-module changes.
+                </li>
+                <li>
+                    On Enterprise, optionally set a company-specific background image
+                    for the Apps/Home screen.
                 </li>
             </ul>
+            <p>
+                Third-party components with explicitly hardcoded colors are not forcibly
+                recolored.
+            </p>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h2>Community Edition</h2>
+            <p><strong>Odoo 18 Community</strong></p>
+            <ul>
+                <li>Company-specific backend primary color.</li>
+                <li>Standard Odoo primary accents follow the selected color.</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <h2>Enterprise Edition</h2>
+            <p><strong>Odoo 18 Enterprise</strong></p>
+            <ul>
+                <li>Company-specific backend primary color.</li>
+                <li>Optional company-specific Apps/Home background image.</li>
+            </ul>
+            <p>
+                The background feature is included through the technical
+                <code>company_theme_enterprise</code> companion addon; it is part of
+                this product, not a separate listing.
+            </p>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2>Multi-company</h2>
+            <p>
+                Each company can have its own primary color. In Enterprise, each company
+                can also have its own Apps/Home background. The active company settings
+                are applied when the backend loads or reloads.
+            </p>
         </div>
     </div>
 
@@ -33,24 +78,18 @@
         <div class="oe_span12">
             <h2>Configuration</h2>
             <ol>
-                <li>Open the company form.</li>
-                <li>Go to the <strong>Themes</strong> tab.</li>
+                <li>Open the company form and select the <strong>Themes</strong> tab.</li>
                 <li>Set <strong>Company Theme Color</strong> and save.</li>
-                <li>Reload the backend to apply the color for the active company.</li>
+                <li>On Enterprise, optionally upload an <strong>Apps Menu Background</strong> image and save.</li>
+                <li>Reload the backend to apply the active company's configuration.</li>
             </ol>
         </div>
     </div>
 
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <h2>Compatibility and behavior</h2>
-            <ul>
-                <li>Compatible with Odoo 18. The color is read from the active company when the backend loads.</li>
-                <li>
-                    Components that define their own hardcoded colors, including third-party modules,
-                    are not forcibly recolored.
-                </li>
-            </ul>
+            <h2>Compatibility</h2>
+            <p>Odoo 18 Community and Enterprise.</p>
         </div>
     </div>
 </div>

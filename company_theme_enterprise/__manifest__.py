@@ -1,8 +1,8 @@
 {
     "name": "Company Theme Enterprise",
     "version": "18.0.1.0.0",
-    "summary": "Set a company-specific background for the Enterprise Apps menu.",
-    "category": "Customizations",
+    "summary": "Technical Enterprise extension for Company Theme.",
+    "category": "Hidden",
     "author": "Arsal Ali",
     "depends": [
         "company_theme",
